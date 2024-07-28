@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+/* Preloader */
+.preloader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 100;
+  width: 100%;
+ background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+
+.preloader .fade-out{
+  opacity: 0;
+  transition: opacity 4s ease;
+}
+
+
+
+
+/* Navbar Section */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+     overflow: hidden;
+     box-shadow: 0px 0px 10px gray;
+     background-color: white;
+     padding: 20px 50px;
+     align-items: center;
+}
+
+
+.navbar .nav-left img{
+    width: 150px;
+}
+
+.nav-right .nav-links ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right .nav-links ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+
+
+.nav-right .nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+}
+
+.nav-links ul li a::after{
+    position: absolute;
+    content: "";
+   bottom: -4px;
+   width: 0%;
+   height: 2px;
+   left: 0;
+   background-color: blue;
+   transition: 0.4s linear;
+}
+
+.nav-links ul li a:hover::after{
+    width: 50%;
+    left: 0;
+}
+
+.nav-links ul li a:hover{
+    color: blue;
+}
+
+/* Hero Section */
+
+.hero{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-right .hero-text{
+    align-items: center;
+}
+
+.hero-right{
+    margin-top: 20px;
+}
+.hero-text span{
+    color: red;
+}
+
+.hero-right h2{
+   font-size: 3rem;
+   margin-bottom: 20px;
+}
+
+.hero-text h4{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: green;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.hero-text .read button{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.hero-text .read button:hover{
+   background-color: green;
+   scale: 1.2;
+}
+
+.hero img{
+    width: 40%;
+}
+
+/* Why Section */
+
+
+.why{
+    overflow: hidden;
+    background-color: beige;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.why h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.choose{
+    display: flex;
+    padding: 20px 50px;
+    gap: 20px;
+    align-items: center;
+}
+
+.choose .why-left h4{
+    line-height: 1.5;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.lines i{
+   font-size: 2rem;
+}
+
+.lines span{
+    font-weight: 700;
+}
+
+/* Marquee Section */
+
+.mar-text{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+marquee{
+    text-align: center;
+    margin-bottom: 80px;
+}
+ marquee img{
+    width: 100px;
+    margin-right: 50px;
+}
+
+/* Services Section */
+
+.services{
+    display: flex;
+    gap: 20px;
+    padding: 20px 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.box{
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px gray;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+}
+
+.box:hover{
+    background-color: black;
+    color: white;
+}
+
+.box img{
+    width: 200px;
+    transition: 0.4s ease-in-out;
+}
+
+.box img:hover{
+    scale: 1.1;
+}
+
+.box-text h3{
+    margin-top: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.box-text p{
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.box-text button{
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    border: 1px solid white;
+}
+
+.box-text button:hover{
+    scale: 1.1;
+    background-color: green;
+}
+
+.services-more{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-more button{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.services-more button:hover{
+    background-color: black;
+    scale: 1.2;
+}
+
+/* https://unsplash.com/s/photos/india */
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  
+  /* Number text (1/5 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .slide-btn{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .slide button{
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: green;
+    transition: 0.3s ease-in-out;
+    color: white;
+  }
+
+  .slide-btn button:hover{
+    background-color: black;
+    scale: 1.1;
+  }
+
+  /* Footer Section */
+
+  .footer{
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+  }
+
+  .footer-image img {
+     width: 200px;
+     margin-bottom: 20px;
+  }
+
+  .footer-text p{
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .mySlides{
+    text-align: center;
+  }
+
+  .mySlides img{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact p{
+    margin-bottom: 20px;
+  }
+
+  .contact h4{
+    color: gray;
+  }
+
+  .contact span{
+    color: blue;
+  }
+
+  /* Sidebar Section */
+
+  .sidebar{
+    width: 0px;
+    background-color: white;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    top: 0;
+    box-shadow: 0px 0px 10px gray;
+  }
+  
+  .sidebar ul{
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .sidebar ul li{
+    list-style: none;
+   margin-bottom: 40px;
+   font-size: 1.3rem;
+   color: black;
+  }
+
+  .sidebar ul a{
+    text-decoration: none;
+  }
+
+
+  .sidebar img{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sidebar ul li:hover{
+     color: blue;
+  }
+
+  .sidebar ul li{
+    border-bottom: 2px solid blue;
+    padding-bottom: 10px;
+  }
+
+  .fa-bars{
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: red;
+    display: none;
+
+  }
+
+  .fa-xmark{
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .fa-bars{
+       display: block;
+    }
+
+    .hideonMobile{
+        display: none;
+    }
+  }
+
+
+  @media (max-width: 425px) {
+    
+.navbar{
+   padding: 20px 20px;
+}
+
+
+.navbar .nav-left img{
+  width: 100px;
+}
+  }
+ 
+
+
+@media (max-width: 1173px) {
+  .hero{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+@media (max-width: 652px) {
+  .hero-right h2 {
+    font-size: 2rem;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero {
+  padding: 20px 20px;
+}
+
+}
+
+
+@media (max-width: 806px) {
+  .choose {
+    padding: 20px 20px;
+    flex-direction: column;
+}
+
+
+.why h2 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+}
+
+@media (max-width: 450px) {
+  .services {
+    padding: 20px 20px;
+}
+
+}
+
+
+@media (max-width: 619px) {
+  .mySlides img {
+    width: 300px;
+    height: 300px;
+  }
+}

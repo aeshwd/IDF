@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IndiaDocsHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+       <!--Navbar Section-->
+
+       <div class="navbar">
+        <div class="nav-left">
+           <img src="images/indiadocs.png" alt="indiadocslogo">
+        </div>
+        <div class="nav-right">
+           <div class="nav-links">
+          
+               <ul>
+                   <li class="hideonMobile"><a href="/IDF/index.html">Home</a></li>
+                   <li class="hideonMobile"><a href="/IDF/about.html" >About Us</a></li>
+                  
+                   <li class="hideonMobile"><a href="/IDF/services.html">Documents</a></li>
+
+                     <li class="hideonMobile"><a href="/IDF/faq.html">FAQs</a></li>
+                     <li class="hideonMobile"><a style="color: blue;"  href="#">Contact Us</a></li>
+               </ul>
+
+               
+
+           </div>
+
+           
+           
+        </div>
+
+        <i class="fa-solid fa-bars hamburger" onclick="showSidebar()"></i>
+
+        
+       </div>
+
+       <div class="sidebar">
+
+           
+           <ul>
+
+               <i class="fa-solid fa-xmark" onclick="hideSidebar()" style="margin-bottom: 10px;"></i>
+               <a href="/IDF/index.html">
+                   <li>Home</li>
+               </a>
+
+               <a href="/IDF/about.html">
+                   <li>About Us</li>
+               </a>
+           
+               <a href="/IDF/services.html">
+                <li>Services</li>
+            </a>
+
+           <a href="/IDF/faq.html">
+               <li>FAQs</li>
+           </a>
+       
+       <a href="#">
+           <li>Contact Us</li>
+       </a>
+   
+           </ul>
+
+           <img src="images/namaste.gif" alt="namaste">
+       </div>
+
+     <!--Contact Section-->
+
+     <div class="contact">
+        <div class="contact-left">
+            <img src="contact.png" alt="contact">
+        </div>
+
+        <div class="contact-right">
+            <h2>Message Us</h2>
+
+            <form action="https://formspree.io/f/xvgpppje"
+            method="POST">
+                <label for="name">Name </label>
+                <input type="text" name="name" id="name" placeholder="eg. John Smith" required>
+                <br>
+
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" placeholder="eg. abc@gmail.com" required>
+
+                <br>
+
+
+               <label for="message"> Message </label>
+              <textarea name="message" id="message" placeholder="Enter Your Message here" cols="20" rows="5"></textarea>
+
+              <br>
+
+              <button type="submit">Submit</button>
+            </form>
+        </div>
+</div>
+
+<!--Footer Section-->
+
+<div class="footer">
+    <div class="footer-image">
+        <img src="images/indiadocs.png" alt="logo">
+    </div>
+
+    <div class="footer-text">
+        <p>IndiaDocsHub is your premier destination for discovering and accessing a wealth of official documents, historical archives, and cultural insights that showcase India's diverse heritage. Whether you're a researcher, student, or enthusiast, our platform offers curated resources to deepen your understanding of India's governance, history, and cultural evolution.</p>
+    </div>
+
+    <div class="contact">
+        <p>Have questions or feedback? Reach out to our team for assistance or inquiries.</p>
+        <h4>Email: <span>aeshgoswami2004@gmail.com</span> | Phone: +91-6006015291</h4>
+    </div>
+</div>
+
+    
+</body>
+<script src="script.js"></script>
+</html>
